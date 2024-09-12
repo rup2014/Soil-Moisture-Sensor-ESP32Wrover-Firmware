@@ -1,3 +1,18 @@
+/****
+
+  File that contains all the consts used in SoilMoistureReadersESP32Wrover.
+
+  1. happyPlant is the xbmp that will show if the soil has the following Status 
+  soilStatus == "Very Wet" || soilStatus == "Wet" || soilStatus == "Good"
+
+  2. sadPlant is the xbmp that will if the soil has the following Status
+  soilStatus == "Kinda Dry" || soilStatus == "Water Now"
+
+  3. numbers_with_hours is the const char[] that contains the time interval
+  the user is shown to select
+
+****/
+
 static const unsigned char happyPlant[] PROGMEM = {
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
   0x00, 0x00, 0x3E, 0x10, 0x00, 0x00, 0x00, 0x00, 0xFB, 0x3D, 0x00, 0x00, 
@@ -50,3 +65,8 @@ static const unsigned char sadPlant[] PROGMEM ={
   0x00, 0x00, 0x00, 0x03, 0xC0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+
+
+const char *numbers_with_hours[24] = {
+    "1 Hour", "2 Hours", "3 Hours", "4 Hours", "5 Hours", "6 Hours", "7 Hours", "8 Hours", "9 Hours", "10 Hours", "11 Hours", "12 Hours", "13 Hours", "14 Hours", "15 Hours", "16 Hours", "17 Hours", "18 Hours", "19 Hours", "20 Hours","21 Hours", "22 Hours", "23 Hours", "24 Hours"
+};
